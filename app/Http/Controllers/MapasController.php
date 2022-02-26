@@ -87,6 +87,11 @@ class MapasController extends Controller
         //
     }
 
+    public function getDataMap(){
+        $mapa = Mapas::where('id', '=', 1)->get();
+        return $mapa;
+    }
+
     public function getImage($filename){
         $file = \Storage::disk('images')->get($filename);
         return new Response($file, 200);
