@@ -1,3 +1,16 @@
+
+$.ajax({
+    url : "mapa/info",
+    global : true,
+    async : false
+}).done(function (msg){
+    alert('Funciona el ajax' + msg);
+    window.json = msg;
+});
+let jsonjs = window.json;
+
+alert(jsonjs);
+alert(jsonjs);
 function initMap() {
     let map = new google.maps.Map(document.getElementById("map"), {
         zoom: 13,

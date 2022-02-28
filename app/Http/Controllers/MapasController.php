@@ -89,7 +89,7 @@ class MapasController extends Controller
 
     public function getDataMap(){
         $mapa = Mapas::where('id', '=', 1)->get();
-        return $mapa;
+        return json_encode($mapa);
     }
 
     public function getImage($filename){

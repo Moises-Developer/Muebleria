@@ -37,3 +37,4 @@ Route::get('/imagenes/{filename}',array(
     'uses' => 'App\Http\Controllers\MapasController@getImage'
 ));
 
+Route::get('mapa/info', 'App\Http\Controllers\MapasController@getDataMap');

@@ -92,13 +92,13 @@
                     <li><a href="{{ url('/producto/calientes') }}" data-transition="pop">Calientes</a></li>
                     <li><a href="{{ url('ubicacion') }}" data-transition="pop">Ubicaci&oacute;n</a></li>
                 </ul>
+            </div>
                 <main class="py-4">
                     @yield('content')
                 </main>
                 <div data-role="footer" data-position="fixed">
                     <h1>Copyright &copy; 2022</h1>
                 </div>
-            </div>
         </div>
         @else
             <br>
@@ -107,7 +107,7 @@
             </main>
         @endif
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDVHQXipgzSD06_ojNbt45EuQ0IOkd0KM&callback=initMap&v=weekly&channel=2" async></script>
     <script src="{{ asset('starbucks/js/index.js') }}"></script>
 </body>
