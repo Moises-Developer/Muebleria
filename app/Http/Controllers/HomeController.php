@@ -23,10 +23,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('starbucks.user.index');
+        return view('muebleria.user.index');
     }
 
     public function adminHome(){
-        return view('starbucks.admin.index');
+        return view('muebleria.admin.index');
     }
 }

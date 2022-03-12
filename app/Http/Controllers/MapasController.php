@@ -16,7 +16,7 @@ class MapasController extends Controller
      */
     public function index()
     {
-        return view('starbucks.user.ubicacion.index');
+        return view('muebleria.user.ubicacion.index');
     }
 
     /**
@@ -61,7 +61,7 @@ class MapasController extends Controller
     {
         $mapa = Mapas::where('id', '=', 1)->get();
         $sucursal = Sucursal::all();
-        return view('starbucks.admin.ubicacion.index')->with('mapas', $mapa)->with('sucursales', $sucursal);
+        return view('muebleria.admin.ubicacion.index')->with('mapas', $mapa)->with('sucursales', $sucursal);
     }
 
     /**

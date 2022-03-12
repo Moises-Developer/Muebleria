@@ -16,7 +16,7 @@ function initMap() {
         zoom: 13,
         center: { lat: 20.686575003501225, lng: -103.35070648740802 },
     });
-    let image = "imagenes/starbucks.png";
+    let image = "imagenes/muebleria.png";
     new google.maps.Marker({
         position: { lat: 20.678734387633124, lng: -103.34486093072228 },
         map,

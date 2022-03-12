@@ -15,8 +15,8 @@ class ProductosController extends Controller
      */
     public function index()
     {
-        $productos = Productos::where('id_categoria', '=', 1)->get();
-        return view('starbucks.user.productos.frias')->with('productos', $productos);
+        $productos = Productos::all();
+        return view('muebleria.user.productos.frias')->with('productos', $productos);
     }
 
     /**
@@ -27,7 +27,7 @@ class ProductosController extends Controller
     public function create()
     {
         $categorias = Categoria::all();
-        return view('starbucks.admin.productos.productos')->with('categorias', $categorias);
+        return view('muebleria.admin.productos.productos')->with('categorias', $categorias);
     }
 
     /**
@@ -47,7 +47,7 @@ class ProductosController extends Controller
 
         $producto = new Productos();
         $producto->nombre = $request->input('nombre_producto');
-        $producto->Precio = $request->input('precio_producto');
+        $producto->Descripcion = $request->input('precio_producto');
         $imagen = $request->file('imagen');
         if($imagen){
             $imagen_ruta = time().$imagen->getClientOriginalName();
@@ -116,7 +116,7 @@ class ProductosController extends Controller
     public function calientes()
     {
         $productos = Productos::where('id_categoria', '=', 2)->get();
-        return view('starbucks.user.productos.caliente')->with('productos', $productos);
+        return view('muebleria.user.productos.caliente')->with('productos', $productos);
     }
 
     public function categoriasAd(){

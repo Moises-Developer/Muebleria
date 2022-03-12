@@ -14,7 +14,7 @@ class CategoriaController extends Controller
      */
     public function index()
     {
-        return view('starbucks.admin.productos.categorias');
+        return view('muebleria.admin.productos.categorias');
     }
 
     /**

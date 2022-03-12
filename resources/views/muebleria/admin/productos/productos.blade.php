@@ -11,8 +11,8 @@
                 </label>
             </div>
             <div>
-                <label for="">Precio:
-                    <input type="number" name="precio_producto">
+                <label for="">Descripcion:
+                    <input type="text" name="precio_producto">
                 </label>
             </div>
             <div>

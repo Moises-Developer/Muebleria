@@ -109,6 +109,6 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDVHQXipgzSD06_ojNbt45EuQ0IOkd0KM&callback=initMap&v=weekly&channel=2" async></script>
-<script src="{{ asset('starbucks/js/index.js') }}"></script>-->
+<script src="{{ asset('muebleria/js/index.js') }}"></script>-->
 </body>
 </html>
